@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListTableCell" rowHeight="100" id="Ful-mw-Sy8" customClass="ListTableCell" customModule="ChatAppUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ful-mw-Sy8" id="nDr-gO-od4">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DS" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-fb-Dbc">
+                        <rect key="frame" x="16" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="8lL-1W-LNY"/>
+                            <constraint firstAttribute="height" constant="70" id="k7G-nB-Jgk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dnyaneshwar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmC-kp-g43">
+                        <rect key="frame" x="102" y="16" width="117.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="057-fO-QTZ">
+                        <rect key="frame" x="102" y="45.5" width="12" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wensday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxV-2M-USP">
+                        <rect key="frame" x="304" y="19" width="63" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EmC-kp-g43" firstAttribute="leading" secondItem="hdn-fb-Dbc" secondAttribute="trailing" constant="16" id="CPd-ML-G6n"/>
+                    <constraint firstItem="hdn-fb-Dbc" firstAttribute="centerY" secondItem="nDr-gO-od4" secondAttribute="centerY" id="GLp-R6-qcK"/>
+                    <constraint firstItem="cxV-2M-USP" firstAttribute="top" secondItem="nDr-gO-od4" secondAttribute="topMargin" constant="8" id="HLs-tZ-4hP"/>
+                    <constraint firstItem="057-fO-QTZ" firstAttribute="leading" secondItem="hdn-fb-Dbc" secondAttribute="trailing" constant="16" id="JFd-gm-RTE"/>
+                    <constraint firstItem="EmC-kp-g43" firstAttribute="top" secondItem="nDr-gO-od4" secondAttribute="top" constant="16" id="M1i-fL-7eK"/>
+                    <constraint firstItem="hdn-fb-Dbc" firstAttribute="leading" secondItem="nDr-gO-od4" secondAttribute="leading" constant="16" id="Pll-z4-tFI"/>
+                    <constraint firstItem="057-fO-QTZ" firstAttribute="top" secondItem="EmC-kp-g43" secondAttribute="bottom" constant="8" id="nAw-go-lDJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cxV-2M-USP" secondAttribute="trailing" constant="8" id="zPc-UM-Wdr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dayLabel" destination="cxV-2M-USP" id="BVX-2a-F0k"/>
+                <outlet property="messageLabel" destination="057-fO-QTZ" id="fCM-vR-Wsr"/>
+                <outlet property="profileImageView" destination="hdn-fb-Dbc" id="ZhJ-nN-Z4I"/>
+                <outlet property="userNameLabel" destination="EmC-kp-g43" id="Tya-wA-ZqL"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="70"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DS" width="648" height="868"/>
+    </resources>
+</document>
